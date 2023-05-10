@@ -8,9 +8,9 @@ Window {
 
     Image {
         id: background
-        source: "images/OldScreen.png"
+        source: "images/Dashboard .png"
     }
-    Image {
+    /* Image {
         id: wheel
         anchors.centerIn: parent
         source: "images/pinwheel.png"
@@ -19,7 +19,7 @@ Window {
                 duration: 250
             }
         }
-    }
+    } */
     MouseArea {
         anchors.fill: parent
         onPressed: {
@@ -50,7 +50,91 @@ Window {
             color: "White"
         }
     }
+    Rectangle {
+        anchors.fill: parent
+        color: "transparent"
 
+        Text{
+            // text for gear number
+            x: 325
+            y: 40
+            font.family: "Helvetica"
+            text: "2"
+            font.pixelSize: 240
+            color: "White"
+        }
+    }
+    Rectangle {
+        x: 375
+        y: 10
+        color: "transparent"
+
+        Text {
+        text: "27"
+        font.pixelSize: 48
+        color: "white"
+        }
+    }
+    Rectangle {
+        // RPM
+        x: 325
+        y: 380
+        color: "transparent"
+
+        Text {
+        text: "12056"
+        font.pixelSize: 56
+        color: "white"
+        }
+    }
+    Rectangle {
+        // Voltage
+        x: 650
+        y: 300
+        color: "transparent"
+
+        Text {
+        text: "12.2"
+        font.pixelSize: 56
+        color: "white"
+        }
+    }
+    Rectangle {
+        // Oil Pressure
+        x: 650
+        y: 100
+        color: "transparent"
+
+        Text {
+        text: "106"
+        font.pixelSize: 56
+        color: "white"
+        }
+    }
+    Rectangle {
+        // Water Temperature
+        x: 50
+        y: 100
+        color: "transparent"
+
+        Text {
+        text: "113"
+        font.pixelSize: 56
+        color: "white"
+        }
+    }
+    Rectangle {
+        // Lambda
+        x: 50
+        y: 300
+        color: "transparent"
+
+        Text {
+        text: "88"
+        font.pixelSize: 56
+        color: "white"
+        }
+    }
     visible: true
     width: background.width
     height: background.height
