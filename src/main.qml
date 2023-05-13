@@ -5,6 +5,12 @@ import QtQuick.Controls 2.2
 Window {
     title: "Dashboard Mock"
     property string currTime: "00:00:00"
+    property string coolantTemp: "0.00"
+    property string oilPressure: "0.00"
+    property string batteryVoltage: "0.00"
+    property string lambdaValue: "0.00"
+    property string engineSpeed: "0.00"
+    property string gear: "0"
 
     Image {
         id: background
@@ -82,7 +88,7 @@ Window {
         color: "transparent"
 
         Text {
-        text: "12056"
+        text: engineSpeed
         font.pixelSize: 56
         color: "white"
         }
@@ -94,7 +100,7 @@ Window {
         color: "transparent"
 
         Text {
-        text: "12.2"
+        text: batterVoltage
         font.pixelSize: 56
         color: "white"
         }
@@ -106,7 +112,7 @@ Window {
         color: "transparent"
 
         Text {
-        text: "106"
+        text: oilPressure
         font.pixelSize: 56
         color: "white"
         }
@@ -118,7 +124,7 @@ Window {
         color: "transparent"
 
         Text {
-        text: "113"
+        text: coolantTemp
         font.pixelSize: 56
         color: "white"
         }
@@ -130,7 +136,7 @@ Window {
         color: "transparent"
 
         Text {
-        text: "88"
+        text: lambdaValue
         font.pixelSize: 56
         color: "white"
         }
